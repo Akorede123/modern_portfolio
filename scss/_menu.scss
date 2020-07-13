@@ -1,0 +1,43 @@
+.menu {
+  position: absolute;
+  right: 35px;
+  top: 20px;
+  z-index: 3;
+  cursor: pointer;
+  @include transition();
+
+  .btn-line {
+    width: 20px;
+    background: white;
+    height: 3px;
+    margin: 3px 0px;
+
+    @include transition();
+  }
+  &:hover {
+    @include transition();
+  }
+
+  &.close {
+    transform: rotate(180deg);
+    @include transition();
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        background: $secondaryColor;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -3px);
+        @include transition();
+        background: $secondaryColor;
+      }
+    }
+    .nav-list {
+      display: block;
+      z-index: 2;
+    }
+  }
+}
