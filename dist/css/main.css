@@ -1,10 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
   background-color: #444;
   color: white;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-}
+  line-height: 1.5; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
+  ul li {
+    color: white; }
+
+a {
+  color: white;
+  padding: 0.3em; }
+  a:hover {
+    color: #eece1a;
+    transition: all 1s ease-out; }
+
+header {
+  margin-top: 40vh;
+  overflow: hidden; }
+
+.menu {
+  width: 30px;
+  height: 20px;
+  float: right;
+  color: white; }
+
+.menu-line {
+  color: white; }
+
+h1 {
+  font-size: 3rem; }
+  h1 span {
+    color: #eece1a; }

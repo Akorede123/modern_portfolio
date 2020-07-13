@@ -1,14 +1,52 @@
 $primaryColor: #444;
+$secondaryColor: #eece1a;
 
+@mixin transition {
+  transition: all 1s ease-out;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: $primaryColor;
   color: white;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
+  // background: url(../dist/background.jpg) no-repeat cover cover/center;
+  line-height: 1.5;
 }
 ul {
   list-style: none;
+  li {
+    color: white;
+  }
 }
 a {
   color: white;
+  padding: 0.3em;
+  &:hover {
+    color: $secondaryColor;
+    @include transition();
+  }
+}
+header {
+  margin-top: 40vh;
+  overflow: hidden;
+}
+.menu {
+  width: 30px;
+  height: 20px;
+  float: right;
+  color: white;
+}
+.menu-line {
+  color: white;
+}
+h1 {
+  font-size: 3rem;
+  span {
+    color: $secondaryColor;
+  }
 }
