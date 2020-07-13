@@ -1,5 +1,14 @@
-$primaryColor: red;
+$primaryColor: #444;
+
 body {
   background-color: $primaryColor;
-  color: $primaryColor;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: white;
 }
